@@ -8,14 +8,20 @@
 void _push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new_node;
+	char *arg;
 
 
 	new_node = malloc(sizeof(stack_t);
+
 	if (!new_node)
 	{
 		printf("Error: malloc failed\n");
 		exit(EXIT_FAILURE);
 	}
 
-
+	if(isnum(arg) == 1 && arg != NULL)
+	{
+		atoi(arg);
+	}
+	
 }
