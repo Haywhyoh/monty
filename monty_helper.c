@@ -5,10 +5,10 @@
  *
  * Return: exit status
  */
-void exit_status(stack_t *stack)
+void exit_status(stack_t **stack)
 {
-	if (stack)
-		free(stack);
+	if (*stack)
+		free_dlist(*stack);
 	exit(EXIT_FAILURE);
 }
 

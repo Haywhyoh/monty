@@ -19,9 +19,10 @@ void _push(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 
+	arg = strtok(NULL, \n);
 	if(isnum(arg) == 1 && arg != NULL)
 	{
-		atoi(arg);
+		push_arg = atoi(arg);
 	}
 	
 }
