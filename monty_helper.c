@@ -25,16 +25,17 @@ int _isnum(char *str)
 	if (str == NULL)
 		return (0);
 
-	while (string[i])
+	while (str[i])
 	{
 		if (str[0] == '-')
 		{
 			i++;
-			continue
+			continue;
 		}
 		if (!_isdigit(str[i])
+		{
 			return (0);
-
+		}
 		i++;
 	}
 	return (1);
