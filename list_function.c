@@ -4,13 +4,14 @@
  * @stack: the head of the double linked list
  *
  */
-void free_dlist(stact_t *stack)
+void free_dlist(stack_t *stack)
 {
-	*temp = stack;
+	stack_t *temp;
+	temp = stack;
 
 	while (stack != NULL)
 	{
-		temp = stack->next
+		temp = stack->next;
 		free(stack);
 		stack = temp;
 	}
@@ -24,9 +25,10 @@ void free_dlist(stact_t *stack)
  * Return: the head pointer
  */
 
-stack_t add_dnodeint(stack_t **head, const int n)
+stack_t *add_dnodeint(stack_t **head, const int n)
 {
-	new_node = malloc(sizeof(stack_t);
+	stack_t *new_node;
+	new_node = malloc(sizeof(stack_t));
 
 	if (!new_node)
 		return (NULL);
@@ -38,7 +40,7 @@ stack_t add_dnodeint(stack_t **head, const int n)
 		*head = new_node;
 	}
 	(*head)->prev = new_node;
-	new_node->n = n
+	new_node->n = n;
 	new_node->next = *head;
 	new_node->prev = NULL;
 	*head = new_node;
