@@ -32,7 +32,7 @@ int _isnum(char *str)
 			i++;
 			continue;
 		}
-		if (!_isdigit(str[i])
+		if (!_isdigit(str[i]))
 		{
 			return (0);
 		}

@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 
+extern int sq_flag;
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer

@@ -9,10 +9,10 @@ void _push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new_node;
 	char *arg;
-	int pust_arg;
+	int push_arg;
 
 
-	new_node = malloc(sizeof(stack_t);
+	new_node = malloc(sizeof(stack_t));
 
 	if (!new_node)
 	{
@@ -20,7 +20,7 @@ void _push(stack_t **stack, unsigned int line_number)
 		exit_status(stack);
 	}
 
-	arg = strtok(NULL, \n);
+	arg = strtok(NULL, "\n ");
 
 	if (isnum(arg) == 1 && arg != NULL)
 	{
@@ -28,7 +28,7 @@ void _push(stack_t **stack, unsigned int line_number)
 	}
 	else
 	{
-		printf("%iL: usage: push integer", line_number);
+		printf("L%d: usage: push integer\n", line_number);
 		exit_status(stack);
 	}
 
