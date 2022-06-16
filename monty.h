@@ -45,5 +45,5 @@ void free_dlist(stack_t *head);
 
 int isnum(char *str);
 void exit_status(stack_t **stack);
-
+int _isdigit(int c);
 #endif
