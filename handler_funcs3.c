@@ -3,7 +3,7 @@
 
 /**
  * rotl_handler - handles the rotl instruction
- * @stack: double pointer to the stack to push to
+ * @stack: double pointer to the stack to push to.
  * @line_number: number of the line in the file
  */
 void rotl_handler(stack_t **stack, unsigned int line_number)

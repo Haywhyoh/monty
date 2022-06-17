@@ -5,7 +5,7 @@ data_t data = DATA_INIT;
 
 /**
  * monty - helper function for main function
- * @args: pointer to struct of arguments from main
+ * @args: pointer to struct of arguments from main.
  *
  * Description: opens and reads from the file
  * containing the opcodes, and calls the function
